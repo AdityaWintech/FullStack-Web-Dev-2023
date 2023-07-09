@@ -1,0 +1,94 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: rgb(229, 229, 229);
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    cursor: pointer;
+    transition: .3s;
+}
+
+.flex {
+    display: flex;
+}
+
+
+.container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    height: 50vh;
+    width: 500px;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #ffffff;
+    border-bottom:2px solid grey;
+}
+
+.container h1 {
+    font-size: 30px;
+    font-family: 600;
+    color: rgb(255, 0, 200);
+}
+
+#screen {
+    background-color: #ffffff;
+    height: 130px;
+    width: 130px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+#screen span {
+    font-size: 50px;
+    color:purple;
+}
+.container div:last-child {
+    width: 100%;
+    justify-content: space-between;
+}
+.container div:last-child button {
+    padding: 15px 20px;
+    font-size: 17px;
+    font-weight: 600;
+    border: none;
+    width: 48%;
+    color: #ffffff;
+}
+#decrement {
+    background-color: rgba(255, 0, 0, 0.681);
+    border:2px solid white;
+    border-radius:2px 2px 2px 20px;
+}
+#increment {
+    background-color:green;
+    border:2px solid white;
+    border-radius:2px 2px 20px 2px;
+}
+
+#clear {
+    padding: 10px;
+    background-color: #0069c0;
+    border: none;
+    font-size: 18px;
+    color: #ffffff;
+    border-radius: 0px 10px 0px 10px;
+    width: 30%;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 95vw;
+    }
+}
